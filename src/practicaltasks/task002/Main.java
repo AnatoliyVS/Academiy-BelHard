@@ -74,8 +74,17 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Введите время в миллисекундах прошедшее с момента 1 января 1970 года 00:00: ");
-        long inputMilliseconds = input.nextInt();
+//        System.out.println("Введите время в миллисекундах прошедшее с момента 1 января 1970 года 00:00 ");
+//        System.out.print("> ");
+//
+//        long inputMilliseconds = input.nextInt();
+        long milliseconds = 1477137898L;
+
+        System.out.println("milliseconds = " + milliseconds + "  this  " + "22.10.2016 15:04:58");
+
+        DateTime dateTime = new DateTime(milliseconds);
+
+        System.out.println(dateTime.getTime());
 
 //==============================================================================
 //        Date date = new Date();
