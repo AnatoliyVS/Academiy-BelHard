@@ -7,50 +7,51 @@ package practicaltasks.task002.datetime;
  */
 public class DateTime {
 
-    private long date;
-    private int buff;
+    private long milliseconds;
 
     public DateTime(long milliseconds) {
-        this.date = milliseconds;
+        this.milliseconds = milliseconds;
     }
 
     public String getDate() {
-        return String.format(
-                "miniseconds: " + miniseconds() + "\n"
-                + "seconds: " + seconds() + "\n"
-                + "minutes: " + minutes()
-        );
+        return "0";
+    }
+
+    public String getTime() {
+        return hours() + ":" + minutes() + ":" + seconds();
     }
 
     public void setDate(long milliseconds) {
-        this.date = milliseconds;
+        this.milliseconds = milliseconds;
     }
 
-    private int getDay() {
+//==============================================================================
+    private int miniseconds() {
+        return (int) milliseconds;
+    }
+
+    private int seconds() {
+        return (int) (milliseconds % 10000 % 60000);
+    }
+
+    private int minutes() {
+        return (int) (milliseconds % 10000 / 100 % 60);
+    }
+
+    private int hours() {
+        return (int) (milliseconds / (60 * 60 * 1000));
+    }
+
+    private int day() {
         return 0;
     }
 
-    private int getMonth() {
+    private int month() {
         return 0;
     }
 
-    private int getYear() {
+    private int year() {
         return 0;
     }
-
-    private long hours() {
-        return 0;
-    }
-
-    private long minutes() {
-        return (date % 10_000_000) / 60_000;
-    }
-
-    private long seconds() {
-        return (date % 100_000) % 60_000 / 1_000;
-    }
-
-    private long miniseconds() {
-        return date % 1_000;
-    }
+//==============================================================================
 }
