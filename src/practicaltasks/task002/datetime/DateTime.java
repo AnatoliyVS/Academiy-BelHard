@@ -18,7 +18,7 @@ public class DateTime {
     }
 
     public String getTime() {
-        return hours() + ":" + minutes() + ":" + seconds();
+        return hours() + ":" + minutes() + ":" + seconds() + "." + miniseconds();
     }
 
     public void setDate(long milliseconds) {
@@ -27,15 +27,15 @@ public class DateTime {
 
 //==============================================================================
     private int miniseconds() {
-        return (int) milliseconds;
+        return (int) (milliseconds % 1000);
     }
 
     private int seconds() {
-        return (int) (milliseconds % 10000 % 60000);
+        return (int) (milliseconds % 10000 / 6000);
     }
 
     private int minutes() {
-        return (int) (milliseconds % 10000 / 100 % 60);
+        return (int) (milliseconds % 10000000 / (60 * 1000));
     }
 
     private int hours() {
