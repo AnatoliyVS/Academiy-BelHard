@@ -10,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int a = 1234;
-        int b = 4321;
+        int a = 123;
+        int b = 321;
 
         System.out.println("a = " + a + "\t" + "b = " + b);
 
