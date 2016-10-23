@@ -174,8 +174,13 @@ public class Date {
 
             int buff1 = number / 100;
             int buff2 = number % 100;
+            int buff3 = number / 10 % 10;
 
-            str = strArrayStrings[buff1 - 1] + " " + twoDigits(buff2);
+            if (buff3 != 0) {
+                str = strArrayStrings[buff1 - 1] + " " + twoDigits(buff2);
+            } else {
+                str = strArrayStrings[buff1 - 1] + " " + oneDigit(buff2);
+            }
         }
         return str;
     }
@@ -198,8 +203,13 @@ public class Date {
 
             int buff1 = number / 1000;
             int buff2 = number % 1000;
+            int buff3 = number / 100 % 10;
 
-            str = strArrayStrings[buff1 - 1] + " " + threeDigits(buff2);
+            if (buff3 != 0) {
+                str = strArrayStrings[buff1 - 1] + " " + threeDigits(buff2);
+            } else {
+                str = strArrayStrings[buff1 - 1] + " " + twoDigits(buff2);
+            }
         }
         return str;
     }

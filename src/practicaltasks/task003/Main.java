@@ -79,6 +79,8 @@ public class Main {
         // Преобразует число в строку
         date.convertsNumberToString();
 
+        System.out.println("---");
         System.out.println(date.getDate());
+        System.out.println("---");
     }
 }
