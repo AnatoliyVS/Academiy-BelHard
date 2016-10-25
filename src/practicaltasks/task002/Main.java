@@ -78,9 +78,9 @@ public class Main {
 //        System.out.print("> ");
 //
 //        long inputMilliseconds = input.nextInt();
-        long milliseconds = 1477137898L;
+        long milliseconds = 1477405831L;
 
-        System.out.println("milliseconds = " + milliseconds + "  this  " + "22.10.2016 15:04:58");
+        System.out.println("milliseconds = " + milliseconds + "  this  " + "25.10.2016, 17:30:31");
 
         DateTime dateTime = new DateTime(milliseconds);
 
