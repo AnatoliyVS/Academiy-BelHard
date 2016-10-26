@@ -23,4 +23,5 @@ public class Main {
         int bb = y;
         System.out.println("2 : " + "a = " + aa + "\t" + "b = " + bb);
     }
+    
 }
