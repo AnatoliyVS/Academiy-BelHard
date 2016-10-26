@@ -1,4 +1,4 @@
-package practicaltasks.task004;
+package practicaltasks.task004.option_1;
 
 /**
  * есть 2 int переменные (значения от 0 до 9999), поменять их значения местами с
@@ -32,6 +32,5 @@ public class Main {
         b = c ^ b;
         a = c ^ b;
         System.out.println("a = " + a + "\t" + "b = " + b);
-//        System.out.println("ok");
     }
 }
