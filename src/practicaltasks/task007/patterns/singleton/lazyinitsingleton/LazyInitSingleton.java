@@ -12,5 +12,5 @@ package practicaltasks.task007.patterns.singleton.lazyinitsingleton;
  */
 public class LazyInitSingleton {
 
-    
+    private static LazyInitSingleton instance;
 }
