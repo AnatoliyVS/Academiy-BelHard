@@ -13,4 +13,14 @@ package practicaltasks.task007.patterns.singleton.lazyinitsingleton;
 public class LazyInitSingleton {
 
     private static LazyInitSingleton instance;
+    
+    private LazyInitSingleton() {
+    }
+    
+    public static LazyInitSingleton getInstanse() {
+        
+        return (instance == null)
+                ? instance = new LazyInitSingleton()
+                : instance;
+    }
 }
