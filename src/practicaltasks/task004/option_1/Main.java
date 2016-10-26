@@ -33,4 +33,5 @@ public class Main {
         a = c ^ b;
         System.out.println("a = " + a + "\t" + "b = " + b);
     }
+    
 }
