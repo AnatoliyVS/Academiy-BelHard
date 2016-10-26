@@ -18,9 +18,12 @@ public class Main {
         Swap s = new Swap();
 
         System.out.println("1 : " + "a = " + x + "\t" + "b = " + y);
+        
         s.swap(x, y);
+        
         int aa = x;
         int bb = y;
+        
         System.out.println("2 : " + "a = " + aa + "\t" + "b = " + bb);
     }
     
