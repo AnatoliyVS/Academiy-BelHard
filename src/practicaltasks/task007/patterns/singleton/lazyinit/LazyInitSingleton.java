@@ -1,4 +1,4 @@
-package practicaltasks.task007.patterns.singleton.lazyinitsingleton;
+package practicaltasks.task007.patterns.singleton.lazyinit;
 
 /**
  * Шаблон проектирования Singleton.
@@ -8,7 +8,7 @@ package practicaltasks.task007.patterns.singleton.lazyinitsingleton;
  * Ленивая инициализация — способ реализации шаблона Singleton с глобальной
  * методом доступа к экземпляру класса.
  *
- * @author Anatoliy
+ * @author Стесик Анатолий
  */
 public class LazyInitSingleton {
 
@@ -22,5 +22,9 @@ public class LazyInitSingleton {
         return (instance == null)
                 ? instance = new LazyInitSingleton()
                 : instance;
+    }
+
+    public String message() {
+        return LazyInitSingleton.class.getTypeName();
     }
 }
