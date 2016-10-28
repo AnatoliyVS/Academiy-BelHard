@@ -15,7 +15,7 @@ public class Main {
         System.out.println(lazyInitSingleton.toString());
 
         EagerInitSingleton eagerInitSingleton = EagerInitSingleton.getInstance();
-        System.out.println(eagerInitSingleton.message());
+        System.out.println(eagerInitSingleton.toString());
 
     }
 
