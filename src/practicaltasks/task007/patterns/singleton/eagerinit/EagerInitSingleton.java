@@ -23,7 +23,8 @@ public class EagerInitSingleton {
         return INSTANCE_EAGER_INIT_SINGLETON;
     }
 
-    public String message() {
-        return EagerInitSingleton.class.getTypeName();
+    @Override
+    public String toString() {
+        return EagerInitSingleton.class.getSimpleName();
     }
 }

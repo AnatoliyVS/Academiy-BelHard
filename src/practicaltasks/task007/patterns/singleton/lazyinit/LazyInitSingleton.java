@@ -24,7 +24,9 @@ public class LazyInitSingleton {
                 : instance;
     }
 
-    public String message() {
-        return LazyInitSingleton.class.getTypeName();
+    @Override
+    public String toString() {
+        return LazyInitSingleton.class.getSimpleName();
     }
+
 }
