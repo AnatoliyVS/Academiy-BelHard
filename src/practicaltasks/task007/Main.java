@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         LazyInitSingleton lazyInitSingleton = LazyInitSingleton.getInstanse();
-        System.out.println(lazyInitSingleton.message());
+        System.out.println(lazyInitSingleton.toString());
 
         EagerInitSingleton eagerInitSingleton = EagerInitSingleton.getInstance();
         System.out.println(eagerInitSingleton.message());
