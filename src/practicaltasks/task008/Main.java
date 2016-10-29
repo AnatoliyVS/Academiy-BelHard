@@ -24,7 +24,7 @@ public class Main {
         }
 
         for (Service service : services) {
-            System.out.print(service.toString());
+            System.out.print(Arrays.toString(service.services));
         }
 
         System.out.println();
