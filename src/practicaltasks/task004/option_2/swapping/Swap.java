@@ -7,21 +7,24 @@ package practicaltasks.task004.option_2.swapping;
  */
 public class Swap {
 
-    private int x;
-    private int y;
+    public int x;
+    public int y;
     private int z;
 
-    public void swap(int a, int b) {
+    public Swap(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
-        x = a;
-        y = b;
+    public void swap(Swap value) {
 
-        z = x ^ y;
-        x ^= z;
-        y ^= z;
+        z = value.x ^ value.y;
+        value.x ^= z;
+        value.y ^= z;
+//        z = x ^ y;
+//        x ^= z;
+//        y ^= z;
 
-        a = x;
-        b = y;
     }
 
 }

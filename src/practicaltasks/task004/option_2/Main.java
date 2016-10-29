@@ -15,14 +15,14 @@ public class Main {
         int x = 123;
         int y = 321;
 
-        Swap s = new Swap();
+        Swap s = new Swap(x,y);
 
         System.out.println("1 : " + "a = " + x + "\t" + "b = " + y);
         
-        s.swap(x, y);
+        s.swap(s);
         
-        int aa = x;
-        int bb = y;
+        int aa = s.x;
+        int bb = s.y;
         
         System.out.println("2 : " + "a = " + aa + "\t" + "b = " + bb);
     }
