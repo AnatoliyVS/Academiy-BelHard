@@ -1,12 +1,14 @@
 package practicaltasks.task008.service;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Стесик Анатолий
  */
 public final class Service {
 
-    public final Service[] services;
+    private Service[] services;
 
     public Service() {
         services = new Service[0];
@@ -16,4 +18,16 @@ public final class Service {
         this.services = services;
     }
 
+    public Service[] getServices() {
+        return services;
+    }
+
+    public void setServices(Service[] services) {
+        this.services = services;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(services);
+    }
 }

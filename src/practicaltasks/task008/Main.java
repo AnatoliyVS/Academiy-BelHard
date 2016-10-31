@@ -12,31 +12,29 @@ import practicaltasks.task008.service.Service;
 public class Main {
 
     private static final int SIZE = 5;
-    private static Service[] services;
     private static Service[] services1;
+    private static Service[] services2;
 
     public static void main(String[] args) {
 
-        services = new Service[SIZE];
+        services1 = new Service[SIZE];
 
-        for (int i = 0; i < services.length; i++) {
-            services[i] = new Service();
+        for (int i = 0; i < services1.length; i++) {
+            services1[i] = new Service();
         }
 
-        for (Service service : services) {
-            System.out.print(Arrays.toString(service.services));
+        for (Service service : services1) {
+            System.out.print(Arrays.toString(service.getServices()));
         }
 
         System.out.println();
 
-        services1[SIZE] = new Service(services);
-
-        for (int i = 0; i < services1.length; i++) {
-            services1[i] = new Service(services);
+        for (int i = SIZE; i >= 0; i--) {
+            services2[i] = new Service(services1);
         }
 
-        for (Service services11 : services1) {
-            System.out.print(services11.toString());
+        for (Service services21 : services2) {
+            System.out.println(Arrays.toString(services21.getServices()));
         }
 
         System.out.println();
