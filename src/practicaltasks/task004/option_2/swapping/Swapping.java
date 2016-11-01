@@ -5,18 +5,18 @@ package practicaltasks.task004.option_2.swapping;
  *
  * @author Стесик Анатолий
  */
-public class Swap {
+public class Swapping {
 
     public int x;
     public int y;
     private int z;
 
-    public Swap(int x, int y) {
+    public Swapping(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public void swap(Swap value) {
+    public void swap(Swapping value) {
 
         z = value.x ^ value.y;
         value.x ^= z;
