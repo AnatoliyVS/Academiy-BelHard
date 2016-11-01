@@ -35,7 +35,7 @@ public final class Service {
      *
      * @return массив типа Service.
      */
-    public Service[] getSERVICE() {
+    public Service[] getService() {
         return SERVICE;
     }
 
