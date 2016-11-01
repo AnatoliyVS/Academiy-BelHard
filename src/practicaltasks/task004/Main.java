@@ -49,5 +49,4 @@ public class Main {
 
         System.out.println("2 : " + "a = " + x + "\t" + "b = " + y);
     }
-
 }
