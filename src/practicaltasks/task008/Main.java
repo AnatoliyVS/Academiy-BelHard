@@ -27,7 +27,7 @@ public class Main {
 
         // вывод
         for (Service service : arrayServices) {
-            System.out.print(Arrays.toString(service.getSERVICE()));
+            System.out.print(Arrays.toString(service.getService()));
         }
 
         System.out.println();
@@ -36,7 +36,7 @@ public class Main {
         services = new Service(arrayServices);
 
         // вывод
-        System.out.println(Arrays.toString(services.getSERVICE()));
+        System.out.println(Arrays.toString(services.getService()));
 
         System.out.println();
     }
