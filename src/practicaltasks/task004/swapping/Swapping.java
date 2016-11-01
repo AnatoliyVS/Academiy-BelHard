@@ -22,5 +22,4 @@ public class Swapping {
         value.x ^= z;
         value.y ^= z;
     }
-    
 }
