@@ -1,7 +1,7 @@
-package practicaltasks.task004.option_2;
+package practicaltasks.task004;
 
 import java.util.Scanner;
-import practicaltasks.task004.option_2.swapping.Swapping;
+import practicaltasks.task004.swapping.Swapping;
 
 /**
  * есть 2 int переменные (значения от 0 до 9999), поменять их значения местами с

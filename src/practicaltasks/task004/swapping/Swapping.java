@@ -1,4 +1,4 @@
-package practicaltasks.task004.option_2.swapping;
+package practicaltasks.task004.swapping;
 
 /**
  * Класс Swapping позволяет примитивные типы поменять местами
