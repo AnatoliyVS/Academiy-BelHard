@@ -12,30 +12,31 @@ import practicaltasks.task008.service.Service;
 public class Main {
 
     private static final int SIZE = 5;
-    private static Service[] services1;
-    private static Service[] services2;
+    private static Service[] arrayServices;
+    private static Service services;
 
     public static void main(String[] args) {
+        
+        // выделяет в памяти объект-массив
+        arrayServices = new Service[SIZE];
 
-        services1 = new Service[SIZE];
-
-        for (int i = 0; i < services1.length; i++) {
-            services1[i] = new Service();
+        // объект-массив создает в каждом объекте
+        for (int i = 0; i < arrayServices.length; i++) {
+            arrayServices[i] = new Service();
         }
 
-        for (Service service : services1) {
-            System.out.print(Arrays.toString(service.getServices()));
+        // вывод
+        for (Service service : arrayServices) {
+            System.out.print(Arrays.toString(service.getSERVICE()));
         }
 
         System.out.println();
 
-        for (int i = SIZE; i >= 0; i--) {
-            services2[i] = new Service(services1);
-        }
+        // создает еще один объект с объект-массив
+        services = new Service(arrayServices);
 
-        for (Service services21 : services2) {
-            System.out.println(Arrays.toString(services21.getServices()));
-        }
+        // вывод
+        System.out.println(Arrays.toString(services.getSERVICE()));
 
         System.out.println();
     }

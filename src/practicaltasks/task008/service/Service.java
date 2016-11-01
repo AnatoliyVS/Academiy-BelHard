@@ -3,31 +3,49 @@ package practicaltasks.task008.service;
 import java.util.Arrays;
 
 /**
+ * Класс Service
  *
  * @author Стесик Анатолий
  */
 public final class Service {
 
-    private Service[] services;
+    /**
+     * Закрытый констант SERVICE.
+     */
+    private final Service[] SERVICE;
 
+    /**
+     * Конструктор с инициализацией без параметров.
+     */
     public Service() {
-        services = new Service[0];
+        SERVICE = new Service[0];
     }
 
+    /**
+     * Конструктор с параметрами.
+     *
+     * @param services массив типа Service.
+     */
     public Service(Service[] services) {
-        this.services = services;
+        this.SERVICE = services;
     }
 
-    public Service[] getServices() {
-        return services;
+    /**
+     * Получает массив объектов типа Service.
+     *
+     * @return массив типа Service.
+     */
+    public Service[] getSERVICE() {
+        return SERVICE;
     }
 
-    public void setServices(Service[] services) {
-        this.services = services;
-    }
-
+    /**
+     * Преобразует массив объектов типа String в строку.
+     *
+     * @return строка
+     */
     @Override
     public String toString() {
-        return Arrays.toString(services);
+        return Arrays.toString(SERVICE);
     }
 }
