@@ -65,13 +65,15 @@ public class Main {
 
     private static void ProgramIsRunning() {
 
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Введите первое число: ");
-        int number1 = input.nextInt();
-
-        System.out.print("Введите второе число: ");
-        int number2 = input.nextInt();
+//        Scanner input = new Scanner(System.in);
+//
+//        System.out.print("Введите первое число: ");
+//        int number1 = input.nextInt();
+//
+//        System.out.print("Введите второе число: ");
+//        int number2 = input.nextInt();
+        int number1 = 9;
+        int number2 = 3;
 
         int value = divide(number1, number2);
 
@@ -79,10 +81,16 @@ public class Main {
     }
 
     private static int divide(int number1, int number2) {
-
         
+        int value = number1 * number2;
         
-        return 0;
+        int i = 0;
+        
+        for (; i != number1; i++) {
+            number1 = value-number1;
+        }
+        return i;
+        // return Math.floorDiv(number1, number2);
     }
 
 }
